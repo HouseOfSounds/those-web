@@ -2,6 +2,7 @@ import "./App.css";
 import { Button } from "./components/ui/button";
 import downloadImg from "./assets/download-yarn.png";
 import thoseImg from "./assets/those.png";
+import yarnImg from "./assets/yarn.png";
 
 const yarnLandingPageUrl = "https://musicyarns.com";
 const yarnAppStoreUrl =
@@ -13,11 +14,16 @@ const iosIconUrl = `${yarnLandingPageUrl}/apple-icon.png`;
 
 function App() {
   return (
-    <div className="flex flex-col lg:flex-row items-start lg:items-center gap-10 lg:gap-0 mx-auto ">
+    <div className="flex flex-col lg:overflow-hidden  lg:flex-row items-start lg:items-center gap-10 lg:gap-0 mx-auto ">
       {/* DOWNLOAD BUTTONS AND TEXT */}
       <div className="order-3 lg:order-none flex flex-col items-start lg:items-end space-y-5">
-        <div className="text-xl lg:text-4xl font-semibold text-left lg:text-right">
-          DOWNLOAD <br className="hidden lg:flex" /> YARN
+        <div className="flex flex-row lg:flex-col text-xl lg:text-4xl font-semibold text-left lg:text-right items-center lg:items-end space-x-1 lg:space-x-0">
+          <div>DOWNLOAD</div>
+
+          <div className="flex items-center space-x-1">
+            <img src={yarnImg} className="size-7 lg:size-10" alt="yarn-image" />
+            <div>YARN</div>
+          </div>
         </div>
 
         {/* BUTTONS */}
