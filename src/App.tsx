@@ -54,7 +54,7 @@ function App() {
           />
         </a>
 
-        <div className="hidden lg:flex lg:absolute z-10 -bottom-5 right-0 left-0 flex-col items-center">
+        <div className="hidden lg:flex lg:absolute z-10 -bottom-10 right-0 left-0 flex-col items-center">
           <div>from</div>
 
           <img
@@ -76,7 +76,9 @@ function App() {
         </div>
       </div>
 
-      <div className="flex order-4 lg:hidden flex-col items-end space-y-2 w-full justify-end">
+      <div className="flex order-4 lg:hidden flex-col items-center  -pb-14 pt-2 w-full justify-center">
+        <div>from</div>
+
         <img
           src={thoseImg}
           alt="download"
