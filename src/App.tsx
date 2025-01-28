@@ -50,7 +50,7 @@ function App() {
           <img
             src={downloadImg}
             alt="download"
-            className="size-[50vh] lg:size-[90vh] 2xl:size-[100dvh] object-cover lg:object-bottom"
+            className="size-[50vh] lg:size-[90vh] 2xl:size-[93dvh] object-cover lg:object-bottom"
           />
         </a>
 
